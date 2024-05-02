@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: rgb(110 190 247) !important;
 			text-decoration: none;
 		}
 
@@ -2464,8 +2464,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: rgb(110 190 247);
+			color: rgb(110 190 247) !important;
 		}
 
 		input[type="submit"]:active,
@@ -2473,8 +2473,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: rgb(110 190 247);
+			color: rgb(110 190 247) !important;
 		}
 
 		input[type="submit"].icon,
@@ -2552,9 +2552,14 @@ input, select, textarea {
 		}
 
 /* Work Item */
+.work-item img {
+	width: 90%;
+	height: 70%;
+	object-fit: cover;
+  }
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0 0 5.5em 0;
 	}
 
 		.work-item .image {
@@ -2593,7 +2598,13 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
+		background: linear-gradient(
+			to bottom,
+			hsl(204.96deg 89.54% 70%),
+			hsl(209, 61%, 16%),
+			#000
+		  );
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
